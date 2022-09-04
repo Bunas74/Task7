@@ -2,7 +2,7 @@ package by.epam.task7.solution8;
 
 public class Customer {
 	
-	private int id;
+    private int id;
     private String surname;
     private String firstname;
     private String patronymic;
