@@ -2,7 +2,7 @@ package by.epam.task7.solution4;
 
 public class Train {
 	
-	private String city;
+    private String city;
     private int numberTrain;
     private int time;
     
