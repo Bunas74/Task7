@@ -26,6 +26,6 @@ public class Solution3 {
 		    if(i.getGrade() == 9 || i.getGrade() == 10){		        
 		        System.out.println("Surname: " + i.getSurname() + "\t Group number: " + i.getNumberGroup());
 		    }		    
-		}
-	}
+	      }
+       }
 }
