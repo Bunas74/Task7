@@ -2,7 +2,7 @@ package by.epam.task7.solution3;
 
 public class Student {
 	
-	private String surname;
+    private String surname;
     private int numberGroup;
     private int grade;
    
