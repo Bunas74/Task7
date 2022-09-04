@@ -2,7 +2,7 @@ package by.epam.task7.solution7;
 
 public class Triangle {
 	
-	private int sideA;
+    private int sideA;
     private int sideB;
     private int sideC;
     
