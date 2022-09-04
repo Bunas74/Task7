@@ -2,7 +2,7 @@ package by.epam.task7.solution6;
 
 public class Time {
 	
-	private int hours;
+    private int hours;
     private int minutes;
     private int seconds;
     
