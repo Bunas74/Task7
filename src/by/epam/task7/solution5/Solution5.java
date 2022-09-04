@@ -14,46 +14,47 @@ public class Solution5 {
 		 * код, демонстрирующий все возможности класса. */
 	    
 	    
-        Counter c = new Counter();
+       		 Counter c = new Counter();
         
-        System.out.println("Counter management menu(range from 1 to 10).");
-        System.out.println("Enter:");
-        System.out.println("\t 1 - to increase the counter value by one.");
-        System.out.println("\t 2 - to decrease the counter value by one.");
-        System.out.println("\t 3 - to see the current state of the counter.");
-        System.out.println("\t 4 - to set your own counter value.");
+        	System.out.println("Counter management menu(range from 1 to 10).");
+       	        System.out.println("Enter:");
+       	        System.out.println("\t 1 - to increase the counter value by one.");
+       	        System.out.println("\t 2 - to decrease the counter value by one.");
+       	        System.out.println("\t 3 - to see the current state of the counter.");
+                System.out.println("\t 4 - to set your own counter value.");
         
-        try(Scanner sc = new Scanner(System.in)) {
+                try(Scanner sc = new Scanner(System.in)) {
     
-        int enter;
+               		 int enter;
     
-        while(c.getCount() >= 0 && c.getCount() <= 10) {
-            System.out.print("Enter > ");
-            enter = sc.nextInt();
+       			 while(c.getCount() >= 0 && c.getCount() <= 10) {
+          			 System.out.print("Enter > ");
+           			 enter = sc.nextInt();
         
-            if(enter == 1) {
-                c.countPlus();
-                System.out.println("+");
-            }
-            else if(enter == 2) {
-                c.countMinus();
-                System.out.println("-");
-            }
-            else if(enter == 3) {
-                System.out.println("Current state of the counter is: " + c.getCount());
-            }
-            else if(enter == 4) {
-                System.out.print("Enter your own counter value > ");
-                c.setCount(sc.nextInt());
-            }
-            else if(enter == 0) {
-                System.out.println("The program is completed at the request of the user.");
-                return;
-            }
-            if(c.getCount() < 0 || c.getCount() > 10) {
-                System.out.println("Error.Counter range exceeded.");
-            }           
-         }       
-      }
-   }
+           			 if(enter == 1) {
+               				 c.countPlus();
+                			 System.out.println("+");
+           			 }
+           			 else if(enter == 2) {
+              			 	 c.countMinus();
+               			 	 System.out.println("-");
+           			 }
+           			 else if(enter == 3) {
+                			System.out.println("Current state of the counter is: " + c.getCount());
+            			}
+            			else if(enter == 4) {
+               				System.out.print("Enter your own counter value > ");
+                			c.setCount(sc.nextInt());
+           		        }
+            			else if(enter == 0) {	
+               				System.out.println("The program is completed at the request of the user.");
+                			return;
+           		        }
+				 
+           		        if(c.getCount() < 0 || c.getCount() > 10) {
+                			System.out.println("Error.Counter range exceeded.");
+            			}           
+        		 }       
+     		 }
+  	 }
 }
